@@ -15,7 +15,7 @@ The card below is rendered on the server based on the value of \`process.env.CON
 `;
 
 const preDynamicContentExplainer = `
-The card content below is fetched by the client-side from \`/quotes/random\` (see file \`app/quotes/random/route.js\`) with a different quote shown on each page load:
+¡Recomendamos este increíble sitio web de tecnología! Te esperamos:"
 `;
 
 const postDynamicContentExplainer = `
@@ -55,7 +55,7 @@ export default function Page() {
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
         </main>
     );
-}
+}    
 
 function RuntimeContextCard() {
     const title = `Netlify Context: running in ${ctx} mode.`;
